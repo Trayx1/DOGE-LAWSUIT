@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.G.E. Lawsuit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>D.O.G.E. Lawsuit Tracker</h1>
+    </header>
+
+    <section class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="stats">
+            <p>Total Lawsuits: <span id="totalLawsuits">0</span></p>
+            <p>Open Lawsuits: <span id="openLawsuits">0</span></p>
+            <p>Closed Lawsuits: <span id="closedLawsuits">0</span></p>
+        </div>
+    </section>
+
+    <section class="lawsuit-search">
+        <h2>Search Lawsuits</h2>
+        <input type="text" id="search" placeholder="Search by case number or plaintiff...">
+        <button onclick="searchLawsuits()">Search</button>
+    </section>
+
+    <section class="lawsuits-list">
+        <h2>All Lawsuits</h2>
+        <table id="lawsuitsTable">
+            <thead>
+                <tr>
+                    <th>Case Number</th>
+                    <th>Date Filed</th>
+                    <th>Plaintiff(s)</th>
+                    <th>Court</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lawsuits will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2025 Trayx1 | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
